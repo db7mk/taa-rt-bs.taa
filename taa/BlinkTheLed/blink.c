@@ -31,7 +31,7 @@ int main(void) {
 
 		P1OUT ^= 0x01;				// Toggle P1.0 using exclusive-OR
 
-		i = 10000;					// SW Delay
+		i = 10000/2;				// Blinke doppelt so schnell
 		do i--;
 		while(i != 0);
 	}
