@@ -1,0 +1,549 @@
+MSP430 Assembler PC v4.2.1 Sun Jan 12 16:15:25 2014
+
+Tools Copyright (c) 2003-2013 Texas Instruments Incorporated
+blink.asm                                                            PAGE    1
+
+       1            ;******************************************************************************
+       2            ;* MSP430 C/C++ Codegen                                             PC v4.2.1 *
+       3            ;* Date/Time created: Sun Jan 12 16:15:25 2014                                *
+       4            ;******************************************************************************
+       5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:d
+       6            
+       7            $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       8                    .dwattr $C$DW$CU, DW_AT_name("../blink.c")
+       9                    .dwattr $C$DW$CU, DW_AT_producer("TI MSP430 C/C++ Codegen PC v4.2.1 Copyright (c) 2003-2013 Te
+      10                    .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      11                    .dwattr $C$DW$CU, DW_AT_comp_dir("E:\Markus\ti_workspaces\taa-rt-bs.taa\taa\BlinkTheLed\Debug"
+      12            $C$DW$1 .dwtag  DW_TAG_variable, DW_AT_name("P1OUT")
+      13                    .dwattr $C$DW$1, DW_AT_TI_symbol_name("P1OUT")
+      14                    .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$19)
+      15                    .dwattr $C$DW$1, DW_AT_declaration
+      16                    .dwattr $C$DW$1, DW_AT_external
+      17                    .dwattr $C$DW$1, DW_AT_decl_file("D:\CS55\ccsv5\ccs_base\msp430\include\msp430g2553.h")
+      18                    .dwattr $C$DW$1, DW_AT_decl_line(0x1c8)
+      19                    .dwattr $C$DW$1, DW_AT_decl_column(0x01)
+      20            $C$DW$2 .dwtag  DW_TAG_variable, DW_AT_name("P1DIR")
+      21                    .dwattr $C$DW$2, DW_AT_TI_symbol_name("P1DIR")
+      22                    .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$19)
+      23                    .dwattr $C$DW$2, DW_AT_declaration
+      24                    .dwattr $C$DW$2, DW_AT_external
+      25                    .dwattr $C$DW$2, DW_AT_decl_file("D:\CS55\ccsv5\ccs_base\msp430\include\msp430g2553.h")
+      26                    .dwattr $C$DW$2, DW_AT_decl_line(0x1c9)
+      27                    .dwattr $C$DW$2, DW_AT_decl_column(0x01)
+      28            $C$DW$3 .dwtag  DW_TAG_variable, DW_AT_name("WDTCTL")
+      29                    .dwattr $C$DW$3, DW_AT_TI_symbol_name("WDTCTL")
+      30                    .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$23)
+      31                    .dwattr $C$DW$3, DW_AT_declaration
+      32                    .dwattr $C$DW$3, DW_AT_external
+      33                    .dwattr $C$DW$3, DW_AT_decl_file("D:\CS55\ccsv5\ccs_base\msp430\include\msp430g2553.h")
+      34                    .dwattr $C$DW$3, DW_AT_decl_line(0x339)
+      35                    .dwattr $C$DW$3, DW_AT_decl_column(0x01)
+      36            ;       D:\CS55\ccsv5\tools\compiler\msp430_4.2.1\bin\opt430.exe C:\\Users\\Markus\\AppData\\Local\\Te
+      37 000000               .sect   ".text:addChar"
+      38                    .align  2
+      39                    .clink
+      40                    .global addChar
+      41            
+      42            $C$DW$4 .dwtag  DW_TAG_subprogram, DW_AT_name("addChar")
+      43                    .dwattr $C$DW$4, DW_AT_low_pc(addChar)
+      44                    .dwattr $C$DW$4, DW_AT_high_pc(0x00)
+      45                    .dwattr $C$DW$4, DW_AT_TI_symbol_name("addChar")
+      46                    .dwattr $C$DW$4, DW_AT_external
+      47                    .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$6)
+      48                    .dwattr $C$DW$4, DW_AT_TI_begin_file("../blink.c")
+      49                    .dwattr $C$DW$4, DW_AT_TI_begin_line(0x1b)
+      50                    .dwattr $C$DW$4, DW_AT_TI_begin_column(0x06)
+      51                    .dwattr $C$DW$4, DW_AT_decl_file("../blink.c")
+      52                    .dwattr $C$DW$4, DW_AT_decl_line(0x1b)
+      53                    .dwattr $C$DW$4, DW_AT_decl_column(0x06)
+      54                    .dwattr $C$DW$4, DW_AT_TI_max_frame_size(0x02)
+      55                    .dwpsn  file "../blink.c",line 28,column 1,is_stmt,address addChar,isa 0
+MSP430 Assembler PC v4.2.1 Sun Jan 12 16:15:25 2014
+
+Tools Copyright (c) 2003-2013 Texas Instruments Incorporated
+blink.asm                                                            PAGE    2
+
+      56            
+      57                    .dwfde $C$DW$CIE, addChar
+      58            $C$DW$5 .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+      59                    .dwattr $C$DW$5, DW_AT_TI_symbol_name("a")
+      60                    .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$6)
+      61                    .dwattr $C$DW$5, DW_AT_location[DW_OP_reg12]
+      62            $C$DW$6 .dwtag  DW_TAG_formal_parameter, DW_AT_name("b")
+      63                    .dwattr $C$DW$6, DW_AT_TI_symbol_name("b")
+      64                    .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$6)
+      65                    .dwattr $C$DW$6, DW_AT_location[DW_OP_reg13]
+      66            
+      67            ;*****************************************************************************
+      68            ;* FUNCTION NAME: addChar                                                    *
+      69            ;*                                                                           *
+      70            ;*   Regs Modified     : SP,SR,r12                                           *
+      71            ;*   Regs Used         : SP,SR,r12,r13                                       *
+      72            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+      73            ;*****************************************************************************
+      74 000000       addChar:
+      75            ;* --------------------------------------------------------------------------*
+      76                    .dwcfi  cfa_offset, 2
+      77                    .dwcfi  save_reg_to_mem, 16, -2
+      78            ;* r13   assigned to b
+      79            $C$DW$7 .dwtag  DW_TAG_variable, DW_AT_name("b")
+      80                    .dwattr $C$DW$7, DW_AT_TI_symbol_name("b")
+      81                    .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$6)
+      82                    .dwattr $C$DW$7, DW_AT_location[DW_OP_reg13]
+      83            ;* r12   assigned to r
+      84            $C$DW$8 .dwtag  DW_TAG_variable, DW_AT_name("r")
+      85                    .dwattr $C$DW$8, DW_AT_TI_symbol_name("r")
+      86                    .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$6)
+      87                    .dwattr $C$DW$8, DW_AT_location[DW_OP_reg12]
+      88                    .dwpsn  file "../blink.c",line 30,column 2,is_stmt,isa 0
+      89 000000 5D4C          ADD.B     r13,r12               ; [] |30| 
+      90                    .dwpsn  file "../blink.c",line 31,column 2,is_stmt,isa 0
+      91                    .dwpsn  file "../blink.c",line 32,column 1,is_stmt,isa 0
+      92            $C$DW$9 .dwtag  DW_TAG_TI_branch
+      93                    .dwattr $C$DW$9, DW_AT_low_pc(0x00)
+      94                    .dwattr $C$DW$9, DW_AT_TI_return
+      95 000002 4130          RET       ; [] 
+      96                    ; [] 
+      97                    .dwattr $C$DW$4, DW_AT_TI_end_file("../blink.c")
+      98                    .dwattr $C$DW$4, DW_AT_TI_end_line(0x20)
+      99                    .dwattr $C$DW$4, DW_AT_TI_end_column(0x01)
+     100                    .dwendentry
+     101                    .dwendtag $C$DW$4
+     102            
+     103 000000               .sect   ".text:addLong"
+     104                    .align  2
+     105                    .clink
+     106                    .global addLong
+     107            
+     108            $C$DW$10        .dwtag  DW_TAG_subprogram, DW_AT_name("addLong")
+     109                    .dwattr $C$DW$10, DW_AT_low_pc(addLong)
+     110                    .dwattr $C$DW$10, DW_AT_high_pc(0x00)
+MSP430 Assembler PC v4.2.1 Sun Jan 12 16:15:25 2014
+
+Tools Copyright (c) 2003-2013 Texas Instruments Incorporated
+blink.asm                                                            PAGE    3
+
+     111                    .dwattr $C$DW$10, DW_AT_TI_symbol_name("addLong")
+     112                    .dwattr $C$DW$10, DW_AT_external
+     113                    .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$12)
+     114                    .dwattr $C$DW$10, DW_AT_TI_begin_file("../blink.c")
+     115                    .dwattr $C$DW$10, DW_AT_TI_begin_line(0x22)
+     116                    .dwattr $C$DW$10, DW_AT_TI_begin_column(0x06)
+     117                    .dwattr $C$DW$10, DW_AT_decl_file("../blink.c")
+     118                    .dwattr $C$DW$10, DW_AT_decl_line(0x22)
+     119                    .dwattr $C$DW$10, DW_AT_decl_column(0x06)
+     120                    .dwattr $C$DW$10, DW_AT_TI_max_frame_size(0x02)
+     121                    .dwpsn  file "../blink.c",line 35,column 1,is_stmt,address addLong,isa 0
+     122            
+     123                    .dwfde $C$DW$CIE, addLong
+     124            $C$DW$11        .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+     125                    .dwattr $C$DW$11, DW_AT_TI_symbol_name("a")
+     126                    .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$12)
+     127                    .dwattr $C$DW$11, DW_AT_location[DW_OP_reg12 DW_OP_piece 2 DW_OP_reg13 DW_OP_piece 2]
+     128            $C$DW$12        .dwtag  DW_TAG_formal_parameter, DW_AT_name("b")
+     129                    .dwattr $C$DW$12, DW_AT_TI_symbol_name("b")
+     130                    .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$12)
+     131                    .dwattr $C$DW$12, DW_AT_location[DW_OP_reg14 DW_OP_piece 2 DW_OP_reg15 DW_OP_piece 2]
+     132            
+     133            ;*****************************************************************************
+     134            ;* FUNCTION NAME: addLong                                                    *
+     135            ;*                                                                           *
+     136            ;*   Regs Modified     : SP,SR,r12,r13                                       *
+     137            ;*   Regs Used         : SP,SR,r12,r13,r14,r15                               *
+     138            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     139            ;*****************************************************************************
+     140 000000       addLong:
+     141            ;* --------------------------------------------------------------------------*
+     142                    .dwcfi  cfa_offset, 2
+     143                    .dwcfi  save_reg_to_mem, 16, -2
+     144                    .dwpsn  file "../blink.c",line 37,column 2,is_stmt,isa 0
+     145 000000 5E0C          ADD.W     r14,r12               ; [] |37| 
+     146 000002 6F0D          ADDC.W    r15,r13               ; [] |37| 
+     147                    .dwpsn  file "../blink.c",line 38,column 2,is_stmt,isa 0
+     148                    .dwpsn  file "../blink.c",line 39,column 1,is_stmt,isa 0
+     149            $C$DW$13        .dwtag  DW_TAG_TI_branch
+     150                    .dwattr $C$DW$13, DW_AT_low_pc(0x00)
+     151                    .dwattr $C$DW$13, DW_AT_TI_return
+     152 000004 4130          RET       ; [] 
+     153                    ; [] 
+     154                    .dwattr $C$DW$10, DW_AT_TI_end_file("../blink.c")
+     155                    .dwattr $C$DW$10, DW_AT_TI_end_line(0x27)
+     156                    .dwattr $C$DW$10, DW_AT_TI_end_column(0x01)
+     157                    .dwendentry
+     158                    .dwendtag $C$DW$10
+     159            
+     160 000000               .sect   ".text:addFloat"
+     161                    .align  2
+     162                    .clink
+     163                    .global addFloat
+     164            
+     165            $C$DW$14        .dwtag  DW_TAG_subprogram, DW_AT_name("addFloat")
+MSP430 Assembler PC v4.2.1 Sun Jan 12 16:15:25 2014
+
+Tools Copyright (c) 2003-2013 Texas Instruments Incorporated
+blink.asm                                                            PAGE    4
+
+     166                    .dwattr $C$DW$14, DW_AT_low_pc(addFloat)
+     167                    .dwattr $C$DW$14, DW_AT_high_pc(0x00)
+     168                    .dwattr $C$DW$14, DW_AT_TI_symbol_name("addFloat")
+     169                    .dwattr $C$DW$14, DW_AT_external
+     170                    .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$16)
+     171                    .dwattr $C$DW$14, DW_AT_TI_begin_file("../blink.c")
+     172                    .dwattr $C$DW$14, DW_AT_TI_begin_line(0x29)
+     173                    .dwattr $C$DW$14, DW_AT_TI_begin_column(0x07)
+     174                    .dwattr $C$DW$14, DW_AT_decl_file("../blink.c")
+     175                    .dwattr $C$DW$14, DW_AT_decl_line(0x29)
+     176                    .dwattr $C$DW$14, DW_AT_decl_column(0x07)
+     177                    .dwattr $C$DW$14, DW_AT_TI_max_frame_size(0x02)
+     178                    .dwpsn  file "../blink.c",line 42,column 1,is_stmt,address addFloat,isa 0
+     179            
+     180                    .dwfde $C$DW$CIE, addFloat
+     181            $C$DW$15        .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+     182                    .dwattr $C$DW$15, DW_AT_TI_symbol_name("a")
+     183                    .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$16)
+     184                    .dwattr $C$DW$15, DW_AT_location[DW_OP_reg12 DW_OP_piece 2 DW_OP_reg13 DW_OP_piece 2]
+     185            $C$DW$16        .dwtag  DW_TAG_formal_parameter, DW_AT_name("b")
+     186                    .dwattr $C$DW$16, DW_AT_TI_symbol_name("b")
+     187                    .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$16)
+     188                    .dwattr $C$DW$16, DW_AT_location[DW_OP_reg14 DW_OP_piece 2 DW_OP_reg15 DW_OP_piece 2]
+     189            
+     190            ;*****************************************************************************
+     191            ;* FUNCTION NAME: addFloat                                                   *
+     192            ;*                                                                           *
+     193            ;*   Regs Modified     : SP,SR,r11,r12,r13,r14,r15                           *
+     194            ;*   Regs Used         : SP,SR,r11,r12,r13,r14,r15                           *
+     195            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     196            ;*****************************************************************************
+     197 000000       addFloat:
+     198            ;* --------------------------------------------------------------------------*
+     199                    .dwcfi  cfa_offset, 2
+     200                    .dwcfi  save_reg_to_mem, 16, -2
+     201                    .dwpsn  file "../blink.c",line 44,column 1,is_stmt,isa 0
+     202            $C$DW$17        .dwtag  DW_TAG_TI_branch
+     203                    .dwattr $C$DW$17, DW_AT_low_pc(0x00)
+     204                    .dwattr $C$DW$17, DW_AT_name("__mspabi_addf")
+     205                    .dwattr $C$DW$17, DW_AT_TI_call
+     206 000000 12B0          CALL      #__mspabi_addf        ; [] |44| 
+         000002 0000!
+     207                                                      ; [] |44| 
+     208                    .dwpsn  file "../blink.c",line 45,column 1,is_stmt,isa 0
+     209                    .dwpsn  file "../blink.c",line 46,column 1,is_stmt,isa 0
+     210            $C$DW$18        .dwtag  DW_TAG_TI_branch
+     211                    .dwattr $C$DW$18, DW_AT_low_pc(0x00)
+     212                    .dwattr $C$DW$18, DW_AT_TI_return
+     213 000004 4130          RET       ; [] 
+     214                    ; [] 
+     215                    .dwattr $C$DW$14, DW_AT_TI_end_file("../blink.c")
+     216                    .dwattr $C$DW$14, DW_AT_TI_end_line(0x2e)
+     217                    .dwattr $C$DW$14, DW_AT_TI_end_column(0x01)
+     218                    .dwendentry
+     219                    .dwendtag $C$DW$14
+MSP430 Assembler PC v4.2.1 Sun Jan 12 16:15:25 2014
+
+Tools Copyright (c) 2003-2013 Texas Instruments Incorporated
+blink.asm                                                            PAGE    5
+
+     220            
+     221 000000               .sect   ".text:main"
+     222                    .align  2
+     223                    .clink
+     224                    .global main
+     225            
+     226            $C$DW$19        .dwtag  DW_TAG_subprogram, DW_AT_name("main")
+     227                    .dwattr $C$DW$19, DW_AT_low_pc(main)
+     228                    .dwattr $C$DW$19, DW_AT_high_pc(0x00)
+     229                    .dwattr $C$DW$19, DW_AT_TI_symbol_name("main")
+     230                    .dwattr $C$DW$19, DW_AT_external
+     231                    .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$10)
+     232                    .dwattr $C$DW$19, DW_AT_TI_begin_file("../blink.c")
+     233                    .dwattr $C$DW$19, DW_AT_TI_begin_line(0x30)
+     234                    .dwattr $C$DW$19, DW_AT_TI_begin_column(0x05)
+     235                    .dwattr $C$DW$19, DW_AT_decl_file("../blink.c")
+     236                    .dwattr $C$DW$19, DW_AT_decl_line(0x30)
+     237                    .dwattr $C$DW$19, DW_AT_decl_column(0x05)
+     238                    .dwattr $C$DW$19, DW_AT_TI_max_frame_size(0x04)
+     239                    .dwpsn  file "../blink.c",line 48,column 16,is_stmt,address main,isa 0
+     240            
+     241                    .dwfde $C$DW$CIE, main
+     242            
+     243            ;*****************************************************************************
+     244            ;* FUNCTION NAME: main                                                       *
+     245            ;*                                                                           *
+     246            ;*   Regs Modified     : SP,SR,r11,r12,r13,r14,r15                           *
+     247            ;*   Regs Used         : SP,SR,r11,r12,r13,r14,r15                           *
+     248            ;*   Local Frame Size  : 0 Args + 2 Auto + 0 Save = 2 byte                   *
+     249            ;*****************************************************************************
+     250 000000       main:
+     251            ;* --------------------------------------------------------------------------*
+     252                    .dwcfi  cfa_offset, 2
+     253                    .dwcfi  save_reg_to_mem, 16, -2
+     254 000000 8321          SUB.W     #2,SP                 ; [] 
+     255                    .dwcfi  cfa_offset, 4
+     256            ;* r12   assigned to r
+     257            $C$DW$20        .dwtag  DW_TAG_variable, DW_AT_name("r")
+     258                    .dwattr $C$DW$20, DW_AT_TI_symbol_name("r")
+     259                    .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$12)
+     260                    .dwattr $C$DW$20, DW_AT_location[DW_OP_reg12 DW_OP_piece 2 DW_OP_reg13 DW_OP_piece 2]
+     261            $C$DW$21        .dwtag  DW_TAG_variable, DW_AT_name("i")
+     262                    .dwattr $C$DW$21, DW_AT_TI_symbol_name("i")
+     263                    .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$23)
+     264                    .dwattr $C$DW$21, DW_AT_location[DW_OP_breg1 0]
+     265                    .dwpsn  file "../blink.c",line 50,column 2,is_stmt,isa 0
+     266 000002 40B2          MOV.W     #23168,&WDTCTL+0      ; [] |50| 
+         000004 5A80 
+         000006 0000!
+     267                    .dwpsn  file "../blink.c",line 51,column 2,is_stmt,isa 0
+     268 000008 D3D2          OR.B      #1,&P1DIR+0           ; [] |51| 
+         00000a 0000!
+     269            ;* --------------------------------------------------------------------------*
+     270            ;*   BEGIN LOOP $C$L1
+     271            ;*
+MSP430 Assembler PC v4.2.1 Sun Jan 12 16:15:25 2014
+
+Tools Copyright (c) 2003-2013 Texas Instruments Incorporated
+blink.asm                                                            PAGE    6
+
+     272            ;*   Loop source line                : 53
+     273            ;*   Loop closing brace source line  : 66
+     274            ;*   Known Minimum Trip Count        : 1
+     275            ;*   Known Maximum Trip Count        : 4294967295
+     276            ;*   Known Max Trip Count Factor     : 1
+     277            ;* --------------------------------------------------------------------------*
+     278 00000c       $C$L1:    
+     279                    .dwpsn  file "../blink.c",line 56,column 3,is_stmt,isa 0
+     280 00000c E3D2          XOR.B     #1,&P1OUT+0           ; [] |56| 
+         00000e 0000!
+     281                    .dwpsn  file "../blink.c",line 58,column 3,is_stmt,isa 0
+     282 000010 40B1          MOV.W     #5000,0(SP)           ; [] |58| 
+         000012 1388 
+         000014 0000 
+     283            ;* --------------------------------------------------------------------------*
+     284            ;*   BEGIN LOOP $C$L2
+     285            ;*
+     286            ;*   Loop source line                : 59
+     287            ;*   Loop closing brace source line  : 59
+     288            ;*   Known Minimum Trip Count        : 1
+     289            ;*   Known Maximum Trip Count        : 4294967295
+     290            ;*   Known Max Trip Count Factor     : 1
+     291            ;* --------------------------------------------------------------------------*
+     292 000016       $C$L2:    
+     293                    .dwpsn  file "../blink.c",line 59,column 6,is_stmt,isa 0
+     294 000016 8391          SUB.W     #1,0(SP)              ; [] |59| 
+         000018 0000 
+     295                    .dwpsn  file "../blink.c",line 60,column 9,is_stmt,isa 0
+     296 00001a 9381          TST.W     0(SP)                 ; [] |60| 
+         00001c 0000 
+     297 00001e 23FB          JNE       $C$L2                 ; [] |60| 
+     298                                                      ; [] |60| 
+     299            ;* --------------------------------------------------------------------------*
+     300                    .dwpsn  file "../blink.c",line 64,column 3,is_stmt,isa 0
+     301 000020 403C          MOV.W     #52429,r12            ; [] |64| 
+         000022 CCCD 
+     302 000024 403D          MOV.W     #16268,r13            ; [] |64| 
+         000026 3F8C 
+     303 000028 403E          MOV.W     #13107,r14            ; [] |64| 
+         00002a 3333 
+     304 00002c 403F          MOV.W     #16547,r15            ; [] |64| 
+         00002e 40A3 
+     305            $C$DW$22        .dwtag  DW_TAG_TI_branch
+     306                    .dwattr $C$DW$22, DW_AT_low_pc(0x00)
+     307                    .dwattr $C$DW$22, DW_AT_name("addFloat")
+     308                    .dwattr $C$DW$22, DW_AT_TI_call
+     309 000030 12B0          CALL      #addFloat             ; [] |64| 
+         000032 0000!
+     310                                                      ; [] |64| 
+     311            $C$DW$23        .dwtag  DW_TAG_TI_branch
+     312                    .dwattr $C$DW$23, DW_AT_low_pc(0x00)
+     313                    .dwattr $C$DW$23, DW_AT_name("__mspabi_fixfli")
+     314                    .dwattr $C$DW$23, DW_AT_TI_call
+     315 000034 12B0          CALL      #__mspabi_fixfli      ; [] |64| 
+         000036 0000!
+MSP430 Assembler PC v4.2.1 Sun Jan 12 16:15:25 2014
+
+Tools Copyright (c) 2003-2013 Texas Instruments Incorporated
+blink.asm                                                            PAGE    7
+
+     316                                                      ; [] |64| 
+     317                    .dwpsn  file "../blink.c",line 65,column 3,is_stmt,isa 0
+     318 000038 ECC2          XOR.B     r12,&P1OUT+0          ; [] |65| 
+         00003a 0000!
+     319                    .dwpsn  file "../blink.c",line 66,column 2,is_stmt,isa 0
+     320 00003c 3FE7          JMP       $C$L1                 ; [] |66| 
+     321                                                      ; [] |66| 
+     322            ;* --------------------------------------------------------------------------*
+     323                    .dwattr $C$DW$19, DW_AT_TI_end_file("../blink.c")
+     324                    .dwattr $C$DW$19, DW_AT_TI_end_line(0x45)
+     325                    .dwattr $C$DW$19, DW_AT_TI_end_column(0x01)
+     326                    .dwendentry
+     327                    .dwendtag $C$DW$19
+     328            
+     329            ;*****************************************************************************
+     330            ;* UNDEFINED EXTERNAL REFERENCES                                             *
+     331            ;*****************************************************************************
+     332                    .global P1OUT
+     333                    .global P1DIR
+     334                    .global WDTCTL
+     335                    .global __mspabi_addf
+     336                    .global __mspabi_fixfli
+     337            
+     338            ;******************************************************************************
+     339            ;* BUILD ATTRIBUTES                                                           *
+     340            ;******************************************************************************
+     341                    .battr "TI", Tag_File, 1, Tag_LPM_INFO(1)
+     342                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0111000000000000000000010
+     343                    .battr "mspabi", Tag_File, 1, Tag_enum_size(3)
+     344            
+     345            ;******************************************************************************
+     346            ;* TYPE INFORMATION                                                           *
+     347            ;******************************************************************************
+     348            $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+     349                    .dwattr $C$DW$T$2, DW_AT_name("void")
+     350            $C$DW$T$4       .dwtag  DW_TAG_base_type
+     351                    .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     352                    .dwattr $C$DW$T$4, DW_AT_name("bool")
+     353                    .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     354            $C$DW$T$5       .dwtag  DW_TAG_base_type
+     355                    .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+     356                    .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     357                    .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     358            $C$DW$T$6       .dwtag  DW_TAG_base_type
+     359                    .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+     360                    .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+     361                    .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     362            $C$DW$T$19      .dwtag  DW_TAG_volatile_type
+     363                    .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$6)
+     364            $C$DW$T$7       .dwtag  DW_TAG_base_type
+     365                    .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     366                    .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     367                    .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+     368            $C$DW$T$8       .dwtag  DW_TAG_base_type
+     369                    .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+MSP430 Assembler PC v4.2.1 Sun Jan 12 16:15:25 2014
+
+Tools Copyright (c) 2003-2013 Texas Instruments Incorporated
+blink.asm                                                            PAGE    8
+
+     370                    .dwattr $C$DW$T$8, DW_AT_name("short")
+     371                    .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+     372            $C$DW$T$9       .dwtag  DW_TAG_base_type
+     373                    .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+     374                    .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     375                    .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+     376            $C$DW$T$10      .dwtag  DW_TAG_base_type
+     377                    .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     378                    .dwattr $C$DW$T$10, DW_AT_name("int")
+     379                    .dwattr $C$DW$T$10, DW_AT_byte_size(0x02)
+     380            $C$DW$T$11      .dwtag  DW_TAG_base_type
+     381                    .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+     382                    .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+     383                    .dwattr $C$DW$T$11, DW_AT_byte_size(0x02)
+     384            $C$DW$T$23      .dwtag  DW_TAG_volatile_type
+     385                    .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$11)
+     386            $C$DW$T$12      .dwtag  DW_TAG_base_type
+     387                    .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+     388                    .dwattr $C$DW$T$12, DW_AT_name("long")
+     389                    .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+     390            $C$DW$T$13      .dwtag  DW_TAG_base_type
+     391                    .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+     392                    .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+     393                    .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+     394            $C$DW$T$14      .dwtag  DW_TAG_base_type
+     395                    .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+     396                    .dwattr $C$DW$T$14, DW_AT_name("long long")
+     397                    .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+     398            $C$DW$T$15      .dwtag  DW_TAG_base_type
+     399                    .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+     400                    .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+     401                    .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+     402            $C$DW$T$16      .dwtag  DW_TAG_base_type
+     403                    .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+     404                    .dwattr $C$DW$T$16, DW_AT_name("float")
+     405                    .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+     406            $C$DW$T$17      .dwtag  DW_TAG_base_type
+     407                    .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+     408                    .dwattr $C$DW$T$17, DW_AT_name("double")
+     409                    .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+     410            $C$DW$T$18      .dwtag  DW_TAG_base_type
+     411                    .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+     412                    .dwattr $C$DW$T$18, DW_AT_name("long double")
+     413                    .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+     414                    .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+     415            
+     416            ;***************************************************************
+     417            ;* DWARF CIE ENTRIES                                           *
+     418            ;***************************************************************
+     419            
+     420            $C$DW$CIE       .dwcie 16
+     421                    .dwcfi  cfa_register, 1
+     422                    .dwcfi  cfa_offset, 0
+     423                    .dwcfi  undefined, 0
+     424                    .dwcfi  undefined, 1
+MSP430 Assembler PC v4.2.1 Sun Jan 12 16:15:25 2014
+
+Tools Copyright (c) 2003-2013 Texas Instruments Incorporated
+blink.asm                                                            PAGE    9
+
+     425                    .dwcfi  undefined, 2
+     426                    .dwcfi  undefined, 3
+     427                    .dwcfi  same_value, 4
+     428                    .dwcfi  same_value, 5
+     429                    .dwcfi  same_value, 6
+     430                    .dwcfi  same_value, 7
+     431                    .dwcfi  same_value, 8
+     432                    .dwcfi  same_value, 9
+     433                    .dwcfi  same_value, 10
+     434                    .dwcfi  undefined, 11
+     435                    .dwcfi  undefined, 12
+     436                    .dwcfi  undefined, 13
+     437                    .dwcfi  undefined, 14
+     438                    .dwcfi  undefined, 15
+     439                    .dwcfi  undefined, 16
+     440                    .dwendentry
+     441            
+     442            ;***************************************************************
+     443            ;* DWARF REGISTER MAP                                          *
+     444            ;***************************************************************
+     445            
+     446            $C$DW$24        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PC")
+     447                    .dwattr $C$DW$24, DW_AT_location[DW_OP_reg0]
+     448            $C$DW$25        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SP")
+     449                    .dwattr $C$DW$25, DW_AT_location[DW_OP_reg1]
+     450            $C$DW$26        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SR")
+     451                    .dwattr $C$DW$26, DW_AT_location[DW_OP_reg2]
+     452            $C$DW$27        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("CG")
+     453                    .dwattr $C$DW$27, DW_AT_location[DW_OP_reg3]
+     454            $C$DW$28        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r4")
+     455                    .dwattr $C$DW$28, DW_AT_location[DW_OP_reg4]
+     456            $C$DW$29        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r5")
+     457                    .dwattr $C$DW$29, DW_AT_location[DW_OP_reg5]
+     458            $C$DW$30        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r6")
+     459                    .dwattr $C$DW$30, DW_AT_location[DW_OP_reg6]
+     460            $C$DW$31        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r7")
+     461                    .dwattr $C$DW$31, DW_AT_location[DW_OP_reg7]
+     462            $C$DW$32        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r8")
+     463                    .dwattr $C$DW$32, DW_AT_location[DW_OP_reg8]
+     464            $C$DW$33        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r9")
+     465                    .dwattr $C$DW$33, DW_AT_location[DW_OP_reg9]
+     466            $C$DW$34        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r10")
+     467                    .dwattr $C$DW$34, DW_AT_location[DW_OP_reg10]
+     468            $C$DW$35        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r11")
+     469                    .dwattr $C$DW$35, DW_AT_location[DW_OP_reg11]
+     470            $C$DW$36        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r12")
+     471                    .dwattr $C$DW$36, DW_AT_location[DW_OP_reg12]
+     472            $C$DW$37        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r13")
+     473                    .dwattr $C$DW$37, DW_AT_location[DW_OP_reg13]
+     474            $C$DW$38        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r14")
+     475                    .dwattr $C$DW$38, DW_AT_location[DW_OP_reg14]
+     476            $C$DW$39        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r15")
+     477                    .dwattr $C$DW$39, DW_AT_location[DW_OP_reg15]
+     478            $C$DW$40        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("CIE_RETA")
+     479                    .dwattr $C$DW$40, DW_AT_location[DW_OP_reg16]
+MSP430 Assembler PC v4.2.1 Sun Jan 12 16:15:25 2014
+
+Tools Copyright (c) 2003-2013 Texas Instruments Incorporated
+blink.asm                                                            PAGE   10
+
+     480                    .dwendtag $C$DW$CU
+     481            
+
+No Assembly Errors, No Assembly Warnings
