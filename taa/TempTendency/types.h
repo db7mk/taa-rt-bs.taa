@@ -8,8 +8,11 @@
 #ifndef TYPES_H_
 #define TYPES_H_
 
-#define DBG_DISPLAY 10
-#define DEBUG DBG_DISPLAY
+#define DBG_DISPLAY
+#undef DBG_DISPLAY
+#define DBG_MEASURE_TEMP 1
+#define DBG_INIT_MEASURE_1
+#define DEBUG DBG_MEASURE_TEMP
 
 typedef enum {
 	OK,
