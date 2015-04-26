@@ -4,6 +4,7 @@
  *  Created on: 26.04.2015
  *      Author: am
  *      $Revision:$
+ *      $Log:$
  */
 
 /* 256 Byte for Informations */
