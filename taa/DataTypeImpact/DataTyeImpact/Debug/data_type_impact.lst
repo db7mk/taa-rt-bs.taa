@@ -1,0 +1,990 @@
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE    1
+
+       1            ;******************************************************************************
+       2            ;* MSP430 C/C++ Codegen                                           Unix v4.4.3 *
+       3            ;* Date/Time created: Sat Apr 18 14:29:05 2015                                *
+       4            ;******************************************************************************
+       5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=small --mem_model:d
+       6            
+       7            $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       8                    .dwattr $C$DW$CU, DW_AT_name("../data_type_impact.c")
+       9                    .dwattr $C$DW$CU, DW_AT_producer("TI MSP430 C/C++ Codegen Unix v4.4.3 Copyright (c) 2003-2015 
+      10                    .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      11                    .dwattr $C$DW$CU, DW_AT_comp_dir("/home/am/workspace_v6_1/DataTyeImpact/Debug")
+      12            
+      13            $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("f2")
+      14                    .dwattr $C$DW$1, DW_AT_TI_symbol_name("f2")
+      15                    .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$10)
+      16                    .dwattr $C$DW$1, DW_AT_declaration
+      17                    .dwattr $C$DW$1, DW_AT_external
+      18                    .dwattr $C$DW$1, DW_AT_decl_file("../data_type_impact.c")
+      19                    .dwattr $C$DW$1, DW_AT_decl_line(0x2d)
+      20                    .dwattr $C$DW$1, DW_AT_decl_column(0x19)
+      21            
+      22            $C$DW$2 .dwtag  DW_TAG_subprogram, DW_AT_name("f3")
+      23                    .dwattr $C$DW$2, DW_AT_TI_symbol_name("f3")
+      24                    .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$10)
+      25                    .dwattr $C$DW$2, DW_AT_declaration
+      26                    .dwattr $C$DW$2, DW_AT_external
+      27                    .dwattr $C$DW$2, DW_AT_decl_file("../data_type_impact.c")
+      28                    .dwattr $C$DW$2, DW_AT_decl_line(0x2e)
+      29                    .dwattr $C$DW$2, DW_AT_decl_column(0x19)
+      30            
+      31            $C$DW$3 .dwtag  DW_TAG_subprogram, DW_AT_name("f4")
+      32                    .dwattr $C$DW$3, DW_AT_TI_symbol_name("f4")
+      33                    .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$10)
+      34                    .dwattr $C$DW$3, DW_AT_declaration
+      35                    .dwattr $C$DW$3, DW_AT_external
+      36                    .dwattr $C$DW$3, DW_AT_decl_file("../data_type_impact.c")
+      37                    .dwattr $C$DW$3, DW_AT_decl_line(0x2f)
+      38                    .dwattr $C$DW$3, DW_AT_decl_column(0x19)
+      39            $C$DW$4 .dwtag  DW_TAG_variable, DW_AT_name("P1OUT")
+      40                    .dwattr $C$DW$4, DW_AT_TI_symbol_name("P1OUT")
+      41                    .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$19)
+      42                    .dwattr $C$DW$4, DW_AT_declaration
+      43                    .dwattr $C$DW$4, DW_AT_external
+      44                    .dwattr $C$DW$4, DW_AT_decl_file("/opt/ti/ccsv6/ccs_base/msp430/include/msp430g2553.h")
+      45                    .dwattr $C$DW$4, DW_AT_decl_line(0x1ca)
+      46                    .dwattr $C$DW$4, DW_AT_decl_column(0x01)
+      47            $C$DW$5 .dwtag  DW_TAG_variable, DW_AT_name("P1DIR")
+      48                    .dwattr $C$DW$5, DW_AT_TI_symbol_name("P1DIR")
+      49                    .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$19)
+      50                    .dwattr $C$DW$5, DW_AT_declaration
+      51                    .dwattr $C$DW$5, DW_AT_external
+      52                    .dwattr $C$DW$5, DW_AT_decl_file("/opt/ti/ccsv6/ccs_base/msp430/include/msp430g2553.h")
+      53                    .dwattr $C$DW$5, DW_AT_decl_line(0x1cb)
+      54                    .dwattr $C$DW$5, DW_AT_decl_column(0x01)
+      55            $C$DW$6 .dwtag  DW_TAG_variable, DW_AT_name("WDTCTL")
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE    2
+
+      56                    .dwattr $C$DW$6, DW_AT_TI_symbol_name("WDTCTL")
+      57                    .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$28)
+      58                    .dwattr $C$DW$6, DW_AT_declaration
+      59                    .dwattr $C$DW$6, DW_AT_external
+      60                    .dwattr $C$DW$6, DW_AT_decl_file("/opt/ti/ccsv6/ccs_base/msp430/include/msp430g2553.h")
+      61                    .dwattr $C$DW$6, DW_AT_decl_line(0x33b)
+      62                    .dwattr $C$DW$6, DW_AT_decl_column(0x01)
+      63            ;       /opt/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/opt430 /tmp/159253fYzA3 /tmp/15925La7sJA 
+      64 000000               .sect   ".text:dummy"
+      65                    .clink
+      66            
+      67            $C$DW$7 .dwtag  DW_TAG_subprogram, DW_AT_name("dummy")
+      68                    .dwattr $C$DW$7, DW_AT_low_pc(dummy)
+      69                    .dwattr $C$DW$7, DW_AT_high_pc(0x00)
+      70                    .dwattr $C$DW$7, DW_AT_TI_symbol_name("dummy")
+      71                    .dwattr $C$DW$7, DW_AT_type(*$C$DW$T$6)
+      72                    .dwattr $C$DW$7, DW_AT_TI_begin_file("../data_type_impact.c")
+      73                    .dwattr $C$DW$7, DW_AT_TI_begin_line(0x19)
+      74                    .dwattr $C$DW$7, DW_AT_TI_begin_column(0x0d)
+      75                    .dwattr $C$DW$7, DW_AT_decl_file("../data_type_impact.c")
+      76                    .dwattr $C$DW$7, DW_AT_decl_line(0x19)
+      77                    .dwattr $C$DW$7, DW_AT_decl_column(0x0d)
+      78                    .dwattr $C$DW$7, DW_AT_TI_max_frame_size(0x02)
+      79                    .dwpsn  file "../data_type_impact.c",line 26,column 1,is_stmt,address dummy,isa 0
+      80            
+      81                    .dwfde $C$DW$CIE, dummy
+      82            $C$DW$8 .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+      83                    .dwattr $C$DW$8, DW_AT_TI_symbol_name("a")
+      84                    .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$6)
+      85                    .dwattr $C$DW$8, DW_AT_location[DW_OP_reg12]
+      86            $C$DW$9 .dwtag  DW_TAG_formal_parameter, DW_AT_name("b")
+      87                    .dwattr $C$DW$9, DW_AT_TI_symbol_name("b")
+      88                    .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$6)
+      89                    .dwattr $C$DW$9, DW_AT_location[DW_OP_reg13]
+      90            
+      91            ;*****************************************************************************
+      92            ;* FUNCTION NAME: dummy                                                      *
+      93            ;*                                                                           *
+      94            ;*   Regs Modified     : SP,SR,r12                                           *
+      95            ;*   Regs Used         : SP,SR,r12,r13                                       *
+      96            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+      97            ;*****************************************************************************
+      98 000000       dummy:
+      99            ;* --------------------------------------------------------------------------*
+     100                    .dwcfi  cfa_offset, 2
+     101                    .dwcfi  save_reg_to_mem, 16, -2
+     102            ;* r13   assigned to b
+     103            $C$DW$10        .dwtag  DW_TAG_variable, DW_AT_name("b")
+     104                    .dwattr $C$DW$10, DW_AT_TI_symbol_name("b")
+     105                    .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$6)
+     106                    .dwattr $C$DW$10, DW_AT_location[DW_OP_reg13]
+     107                    .dwpsn  file "../data_type_impact.c",line 27,column 2,is_stmt,isa 0
+     108 000000 5D4C          ADD.B     r13,r12               ; [] |27| 
+     109                    .dwpsn  file "../data_type_impact.c",line 28,column 1,is_stmt,isa 0
+     110            $C$DW$11        .dwtag  DW_TAG_TI_branch
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE    3
+
+     111                    .dwattr $C$DW$11, DW_AT_low_pc(0x00)
+     112                    .dwattr $C$DW$11, DW_AT_TI_return
+     113 000002 4130          RET       ; [] 
+     114                    ; [] 
+     115                    .dwattr $C$DW$7, DW_AT_TI_end_file("../data_type_impact.c")
+     116                    .dwattr $C$DW$7, DW_AT_TI_end_line(0x1c)
+     117                    .dwattr $C$DW$7, DW_AT_TI_end_column(0x01)
+     118                    .dwendentry
+     119                    .dwendtag $C$DW$7
+     120            
+     121 000000               .sect   ".text:addChar"
+     122                    .clink
+     123                    .global addChar
+     124            
+     125            $C$DW$12        .dwtag  DW_TAG_subprogram, DW_AT_name("addChar")
+     126                    .dwattr $C$DW$12, DW_AT_low_pc(addChar)
+     127                    .dwattr $C$DW$12, DW_AT_high_pc(0x00)
+     128                    .dwattr $C$DW$12, DW_AT_TI_symbol_name("addChar")
+     129                    .dwattr $C$DW$12, DW_AT_external
+     130                    .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$6)
+     131                    .dwattr $C$DW$12, DW_AT_TI_begin_file("../data_type_impact.c")
+     132                    .dwattr $C$DW$12, DW_AT_TI_begin_line(0x1f)
+     133                    .dwattr $C$DW$12, DW_AT_TI_begin_column(0x06)
+     134                    .dwattr $C$DW$12, DW_AT_decl_file("../data_type_impact.c")
+     135                    .dwattr $C$DW$12, DW_AT_decl_line(0x1f)
+     136                    .dwattr $C$DW$12, DW_AT_decl_column(0x06)
+     137                    .dwattr $C$DW$12, DW_AT_TI_max_frame_size(0x02)
+     138                    .dwpsn  file "../data_type_impact.c",line 32,column 1,is_stmt,address addChar,isa 0
+     139            
+     140                    .dwfde $C$DW$CIE, addChar
+     141            $C$DW$13        .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+     142                    .dwattr $C$DW$13, DW_AT_TI_symbol_name("a")
+     143                    .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$6)
+     144                    .dwattr $C$DW$13, DW_AT_location[DW_OP_reg12]
+     145            $C$DW$14        .dwtag  DW_TAG_formal_parameter, DW_AT_name("b")
+     146                    .dwattr $C$DW$14, DW_AT_TI_symbol_name("b")
+     147                    .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$6)
+     148                    .dwattr $C$DW$14, DW_AT_location[DW_OP_reg13]
+     149            
+     150            ;*****************************************************************************
+     151            ;* FUNCTION NAME: addChar                                                    *
+     152            ;*                                                                           *
+     153            ;*   Regs Modified     : SP,SR,r12                                           *
+     154            ;*   Regs Used         : SP,SR,r12,r13                                       *
+     155            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     156            ;*****************************************************************************
+     157 000000       addChar:
+     158            ;* --------------------------------------------------------------------------*
+     159                    .dwcfi  cfa_offset, 2
+     160                    .dwcfi  save_reg_to_mem, 16, -2
+     161            ;* r13   assigned to b
+     162            $C$DW$15        .dwtag  DW_TAG_variable, DW_AT_name("b")
+     163                    .dwattr $C$DW$15, DW_AT_TI_symbol_name("b")
+     164                    .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$6)
+     165                    .dwattr $C$DW$15, DW_AT_location[DW_OP_reg13]
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE    4
+
+     166            ;* r12   assigned to r
+     167            $C$DW$16        .dwtag  DW_TAG_variable, DW_AT_name("r")
+     168                    .dwattr $C$DW$16, DW_AT_TI_symbol_name("r")
+     169                    .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$6)
+     170                    .dwattr $C$DW$16, DW_AT_location[DW_OP_reg12]
+     171                    .dwpsn  file "../data_type_impact.c",line 34,column 2,is_stmt,isa 0
+     172 000000 5D4C          ADD.B     r13,r12               ; [] |34| 
+     173                    .dwpsn  file "../data_type_impact.c",line 35,column 2,is_stmt,isa 0
+     174                    .dwpsn  file "../data_type_impact.c",line 36,column 1,is_stmt,isa 0
+     175            $C$DW$17        .dwtag  DW_TAG_TI_branch
+     176                    .dwattr $C$DW$17, DW_AT_low_pc(0x00)
+     177                    .dwattr $C$DW$17, DW_AT_TI_return
+     178 000002 4130          RET       ; [] 
+     179                    ; [] 
+     180                    .dwattr $C$DW$12, DW_AT_TI_end_file("../data_type_impact.c")
+     181                    .dwattr $C$DW$12, DW_AT_TI_end_line(0x24)
+     182                    .dwattr $C$DW$12, DW_AT_TI_end_column(0x01)
+     183                    .dwendentry
+     184                    .dwendtag $C$DW$12
+     185            
+     186 000000               .sect   ".text:addLong"
+     187                    .clink
+     188            
+     189            $C$DW$18        .dwtag  DW_TAG_subprogram, DW_AT_name("addLong")
+     190                    .dwattr $C$DW$18, DW_AT_low_pc(addLong)
+     191                    .dwattr $C$DW$18, DW_AT_high_pc(0x00)
+     192                    .dwattr $C$DW$18, DW_AT_TI_symbol_name("addLong")
+     193                    .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$29)
+     194                    .dwattr $C$DW$18, DW_AT_TI_begin_file("../data_type_impact.c")
+     195                    .dwattr $C$DW$18, DW_AT_TI_begin_line(0x26)
+     196                    .dwattr $C$DW$18, DW_AT_TI_begin_column(0x16)
+     197                    .dwattr $C$DW$18, DW_AT_decl_file("../data_type_impact.c")
+     198                    .dwattr $C$DW$18, DW_AT_decl_line(0x26)
+     199                    .dwattr $C$DW$18, DW_AT_decl_column(0x16)
+     200                    .dwattr $C$DW$18, DW_AT_TI_max_frame_size(0x02)
+     201                    .dwpsn  file "../data_type_impact.c",line 39,column 1,is_stmt,address addLong,isa 0
+     202            
+     203                    .dwfde $C$DW$CIE, addLong
+     204            $C$DW$19        .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+     205                    .dwattr $C$DW$19, DW_AT_TI_symbol_name("a")
+     206                    .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$12)
+     207                    .dwattr $C$DW$19, DW_AT_location[DW_OP_reg12]
+     208            $C$DW$20        .dwtag  DW_TAG_formal_parameter, DW_AT_name("b")
+     209                    .dwattr $C$DW$20, DW_AT_TI_symbol_name("b")
+     210                    .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$12)
+     211                    .dwattr $C$DW$20, DW_AT_location[DW_OP_reg14]
+     212            
+     213            ;*****************************************************************************
+     214            ;* FUNCTION NAME: addLong                                                    *
+     215            ;*                                                                           *
+     216            ;*   Regs Modified     : SP,SR,r12,r13                                       *
+     217            ;*   Regs Used         : SP,SR,r12,r13,r14,r15                               *
+     218            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     219            ;*****************************************************************************
+     220 000000       addLong:
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE    5
+
+     221            ;* --------------------------------------------------------------------------*
+     222                    .dwcfi  cfa_offset, 2
+     223                    .dwcfi  save_reg_to_mem, 16, -2
+     224                    .dwpsn  file "../data_type_impact.c",line 41,column 2,is_stmt,isa 0
+     225 000000 5E0C          ADD.W     r14,r12               ; [] |41| 
+     226 000002 6F0D          ADDC.W    r15,r13               ; [] |41| 
+     227                    .dwpsn  file "../data_type_impact.c",line 42,column 2,is_stmt,isa 0
+     228                    .dwpsn  file "../data_type_impact.c",line 43,column 1,is_stmt,isa 0
+     229            $C$DW$21        .dwtag  DW_TAG_TI_branch
+     230                    .dwattr $C$DW$21, DW_AT_low_pc(0x00)
+     231                    .dwattr $C$DW$21, DW_AT_TI_return
+     232 000004 4130          RET       ; [] 
+     233                    ; [] 
+     234                    .dwattr $C$DW$18, DW_AT_TI_end_file("../data_type_impact.c")
+     235                    .dwattr $C$DW$18, DW_AT_TI_end_line(0x2b)
+     236                    .dwattr $C$DW$18, DW_AT_TI_end_column(0x01)
+     237                    .dwendentry
+     238                    .dwendtag $C$DW$18
+     239            
+     240 000000               .sect   ".text:f1"
+     241                    .clink
+     242                    .global f1
+     243            
+     244            $C$DW$22        .dwtag  DW_TAG_subprogram, DW_AT_name("f1")
+     245                    .dwattr $C$DW$22, DW_AT_low_pc(f1)
+     246                    .dwattr $C$DW$22, DW_AT_high_pc(0x00)
+     247                    .dwattr $C$DW$22, DW_AT_TI_symbol_name("f1")
+     248                    .dwattr $C$DW$22, DW_AT_external
+     249                    .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$6)
+     250                    .dwattr $C$DW$22, DW_AT_TI_begin_file("../data_type_impact.c")
+     251                    .dwattr $C$DW$22, DW_AT_TI_begin_line(0x2d)
+     252                    .dwattr $C$DW$22, DW_AT_TI_begin_column(0x06)
+     253                    .dwattr $C$DW$22, DW_AT_decl_file("../data_type_impact.c")
+     254                    .dwattr $C$DW$22, DW_AT_decl_line(0x2d)
+     255                    .dwattr $C$DW$22, DW_AT_decl_column(0x06)
+     256                    .dwattr $C$DW$22, DW_AT_TI_max_frame_size(0x02)
+     257                    .dwpsn  file "../data_type_impact.c",line 45,column 17,is_stmt,address f1,isa 0
+     258            
+     259                    .dwfde $C$DW$CIE, f1
+     260            $C$DW$23        .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+     261                    .dwattr $C$DW$23, DW_AT_TI_symbol_name("a")
+     262                    .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$6)
+     263                    .dwattr $C$DW$23, DW_AT_location[DW_OP_reg12]
+     264            
+     265            ;*****************************************************************************
+     266            ;* FUNCTION NAME: f1                                                         *
+     267            ;*                                                                           *
+     268            ;*   Regs Modified     : SP,SR,r11,r12,r13,r14,r15                           *
+     269            ;*   Regs Used         : SP,SR,r11,r12,r13,r14,r15                           *
+     270            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     271            ;*****************************************************************************
+     272 000000       f1:
+     273            ;* --------------------------------------------------------------------------*
+     274                    .dwcfi  cfa_offset, 2
+     275                    .dwcfi  save_reg_to_mem, 16, -2
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE    6
+
+     276            ;* r12   assigned to a
+     277            $C$DW$24        .dwtag  DW_TAG_variable, DW_AT_name("a")
+     278                    .dwattr $C$DW$24, DW_AT_TI_symbol_name("a")
+     279                    .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$6)
+     280                    .dwattr $C$DW$24, DW_AT_location[DW_OP_reg12]
+     281                    .dwpsn  file "../data_type_impact.c",line 45,column 18,is_stmt,isa 0
+     282 000000 4C4C          MOV.B     r12,r12               ; [] |45| 
+     283            $C$DW$25        .dwtag  DW_TAG_TI_branch
+     284                    .dwattr $C$DW$25, DW_AT_low_pc(0x00)
+     285                    .dwattr $C$DW$25, DW_AT_name("f2")
+     286                    .dwattr $C$DW$25, DW_AT_TI_call
+     287 000002 12B0          CALL      #f2                   ; [] |45| 
+         000004 0000!
+     288                                                      ; [] |45| 
+     289                    .dwpsn  file "../data_type_impact.c",line 45,column 31,is_stmt,isa 0
+     290            $C$DW$26        .dwtag  DW_TAG_TI_branch
+     291                    .dwattr $C$DW$26, DW_AT_low_pc(0x00)
+     292                    .dwattr $C$DW$26, DW_AT_TI_return
+     293 000006 4130          RET       ; [] 
+     294                    ; [] 
+     295                    .dwattr $C$DW$22, DW_AT_TI_end_file("../data_type_impact.c")
+     296                    .dwattr $C$DW$22, DW_AT_TI_end_line(0x2d)
+     297                    .dwattr $C$DW$22, DW_AT_TI_end_column(0x1f)
+     298                    .dwendentry
+     299                    .dwendtag $C$DW$22
+     300            
+     301 000000               .sect   ".text:f2"
+     302                    .clink
+     303                    .global f2
+     304            
+     305            $C$DW$27        .dwtag  DW_TAG_subprogram, DW_AT_name("f2")
+     306                    .dwattr $C$DW$27, DW_AT_low_pc(f2)
+     307                    .dwattr $C$DW$27, DW_AT_high_pc(0x00)
+     308                    .dwattr $C$DW$27, DW_AT_TI_symbol_name("f2")
+     309                    .dwattr $C$DW$27, DW_AT_external
+     310                    .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$6)
+     311                    .dwattr $C$DW$27, DW_AT_TI_begin_file("../data_type_impact.c")
+     312                    .dwattr $C$DW$27, DW_AT_TI_begin_line(0x2e)
+     313                    .dwattr $C$DW$27, DW_AT_TI_begin_column(0x06)
+     314                    .dwattr $C$DW$27, DW_AT_decl_file("../data_type_impact.c")
+     315                    .dwattr $C$DW$27, DW_AT_decl_line(0x2e)
+     316                    .dwattr $C$DW$27, DW_AT_decl_column(0x06)
+     317                    .dwattr $C$DW$27, DW_AT_TI_max_frame_size(0x02)
+     318                    .dwpsn  file "../data_type_impact.c",line 46,column 17,is_stmt,address f2,isa 0
+     319            
+     320                    .dwfde $C$DW$CIE, f2
+     321            $C$DW$28        .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+     322                    .dwattr $C$DW$28, DW_AT_TI_symbol_name("a")
+     323                    .dwattr $C$DW$28, DW_AT_type(*$C$DW$T$6)
+     324                    .dwattr $C$DW$28, DW_AT_location[DW_OP_reg12]
+     325            
+     326            ;*****************************************************************************
+     327            ;* FUNCTION NAME: f2                                                         *
+     328            ;*                                                                           *
+     329            ;*   Regs Modified     : SP,SR,r11,r12,r13,r14,r15                           *
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE    7
+
+     330            ;*   Regs Used         : SP,SR,r11,r12,r13,r14,r15                           *
+     331            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     332            ;*****************************************************************************
+     333 000000       f2:
+     334            ;* --------------------------------------------------------------------------*
+     335                    .dwcfi  cfa_offset, 2
+     336                    .dwcfi  save_reg_to_mem, 16, -2
+     337            ;* r12   assigned to a
+     338            $C$DW$29        .dwtag  DW_TAG_variable, DW_AT_name("a")
+     339                    .dwattr $C$DW$29, DW_AT_TI_symbol_name("a")
+     340                    .dwattr $C$DW$29, DW_AT_type(*$C$DW$T$6)
+     341                    .dwattr $C$DW$29, DW_AT_location[DW_OP_reg12]
+     342                    .dwpsn  file "../data_type_impact.c",line 46,column 18,is_stmt,isa 0
+     343 000000 4C4C          MOV.B     r12,r12               ; [] |46| 
+     344            $C$DW$30        .dwtag  DW_TAG_TI_branch
+     345                    .dwattr $C$DW$30, DW_AT_low_pc(0x00)
+     346                    .dwattr $C$DW$30, DW_AT_name("f3")
+     347                    .dwattr $C$DW$30, DW_AT_TI_call
+     348 000002 12B0          CALL      #f3                   ; [] |46| 
+         000004 0000!
+     349                                                      ; [] |46| 
+     350                    .dwpsn  file "../data_type_impact.c",line 46,column 31,is_stmt,isa 0
+     351            $C$DW$31        .dwtag  DW_TAG_TI_branch
+     352                    .dwattr $C$DW$31, DW_AT_low_pc(0x00)
+     353                    .dwattr $C$DW$31, DW_AT_TI_return
+     354 000006 4130          RET       ; [] 
+     355                    ; [] 
+     356                    .dwattr $C$DW$27, DW_AT_TI_end_file("../data_type_impact.c")
+     357                    .dwattr $C$DW$27, DW_AT_TI_end_line(0x2e)
+     358                    .dwattr $C$DW$27, DW_AT_TI_end_column(0x1f)
+     359                    .dwendentry
+     360                    .dwendtag $C$DW$27
+     361            
+     362 000000               .sect   ".text:f3"
+     363                    .clink
+     364                    .global f3
+     365            
+     366            $C$DW$32        .dwtag  DW_TAG_subprogram, DW_AT_name("f3")
+     367                    .dwattr $C$DW$32, DW_AT_low_pc(f3)
+     368                    .dwattr $C$DW$32, DW_AT_high_pc(0x00)
+     369                    .dwattr $C$DW$32, DW_AT_TI_symbol_name("f3")
+     370                    .dwattr $C$DW$32, DW_AT_external
+     371                    .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$6)
+     372                    .dwattr $C$DW$32, DW_AT_TI_begin_file("../data_type_impact.c")
+     373                    .dwattr $C$DW$32, DW_AT_TI_begin_line(0x2f)
+     374                    .dwattr $C$DW$32, DW_AT_TI_begin_column(0x06)
+     375                    .dwattr $C$DW$32, DW_AT_decl_file("../data_type_impact.c")
+     376                    .dwattr $C$DW$32, DW_AT_decl_line(0x2f)
+     377                    .dwattr $C$DW$32, DW_AT_decl_column(0x06)
+     378                    .dwattr $C$DW$32, DW_AT_TI_max_frame_size(0x02)
+     379                    .dwpsn  file "../data_type_impact.c",line 47,column 17,is_stmt,address f3,isa 0
+     380            
+     381                    .dwfde $C$DW$CIE, f3
+     382            $C$DW$33        .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+     383                    .dwattr $C$DW$33, DW_AT_TI_symbol_name("a")
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE    8
+
+     384                    .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$6)
+     385                    .dwattr $C$DW$33, DW_AT_location[DW_OP_reg12]
+     386            
+     387            ;*****************************************************************************
+     388            ;* FUNCTION NAME: f3                                                         *
+     389            ;*                                                                           *
+     390            ;*   Regs Modified     : SP,SR,r11,r12,r13,r14,r15                           *
+     391            ;*   Regs Used         : SP,SR,r11,r12,r13,r14,r15                           *
+     392            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     393            ;*****************************************************************************
+     394 000000       f3:
+     395            ;* --------------------------------------------------------------------------*
+     396                    .dwcfi  cfa_offset, 2
+     397                    .dwcfi  save_reg_to_mem, 16, -2
+     398            ;* r12   assigned to a
+     399            $C$DW$34        .dwtag  DW_TAG_variable, DW_AT_name("a")
+     400                    .dwattr $C$DW$34, DW_AT_TI_symbol_name("a")
+     401                    .dwattr $C$DW$34, DW_AT_type(*$C$DW$T$6)
+     402                    .dwattr $C$DW$34, DW_AT_location[DW_OP_reg12]
+     403                    .dwpsn  file "../data_type_impact.c",line 47,column 18,is_stmt,isa 0
+     404 000000 4C4C          MOV.B     r12,r12               ; [] |47| 
+     405            $C$DW$35        .dwtag  DW_TAG_TI_branch
+     406                    .dwattr $C$DW$35, DW_AT_low_pc(0x00)
+     407                    .dwattr $C$DW$35, DW_AT_name("f4")
+     408                    .dwattr $C$DW$35, DW_AT_TI_call
+     409 000002 12B0          CALL      #f4                   ; [] |47| 
+         000004 0000!
+     410                                                      ; [] |47| 
+     411                    .dwpsn  file "../data_type_impact.c",line 47,column 31,is_stmt,isa 0
+     412            $C$DW$36        .dwtag  DW_TAG_TI_branch
+     413                    .dwattr $C$DW$36, DW_AT_low_pc(0x00)
+     414                    .dwattr $C$DW$36, DW_AT_TI_return
+     415 000006 4130          RET       ; [] 
+     416                    ; [] 
+     417                    .dwattr $C$DW$32, DW_AT_TI_end_file("../data_type_impact.c")
+     418                    .dwattr $C$DW$32, DW_AT_TI_end_line(0x2f)
+     419                    .dwattr $C$DW$32, DW_AT_TI_end_column(0x1f)
+     420                    .dwendentry
+     421                    .dwendtag $C$DW$32
+     422            
+     423 000000               .sect   ".text:f4"
+     424                    .clink
+     425                    .global f4
+     426            
+     427            $C$DW$37        .dwtag  DW_TAG_subprogram, DW_AT_name("f4")
+     428                    .dwattr $C$DW$37, DW_AT_low_pc(f4)
+     429                    .dwattr $C$DW$37, DW_AT_high_pc(0x00)
+     430                    .dwattr $C$DW$37, DW_AT_TI_symbol_name("f4")
+     431                    .dwattr $C$DW$37, DW_AT_external
+     432                    .dwattr $C$DW$37, DW_AT_type(*$C$DW$T$6)
+     433                    .dwattr $C$DW$37, DW_AT_TI_begin_file("../data_type_impact.c")
+     434                    .dwattr $C$DW$37, DW_AT_TI_begin_line(0x30)
+     435                    .dwattr $C$DW$37, DW_AT_TI_begin_column(0x06)
+     436                    .dwattr $C$DW$37, DW_AT_decl_file("../data_type_impact.c")
+     437                    .dwattr $C$DW$37, DW_AT_decl_line(0x30)
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE    9
+
+     438                    .dwattr $C$DW$37, DW_AT_decl_column(0x06)
+     439                    .dwattr $C$DW$37, DW_AT_TI_max_frame_size(0x02)
+     440                    .dwpsn  file "../data_type_impact.c",line 48,column 17,is_stmt,address f4,isa 0
+     441            
+     442                    .dwfde $C$DW$CIE, f4
+     443            $C$DW$38        .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+     444                    .dwattr $C$DW$38, DW_AT_TI_symbol_name("a")
+     445                    .dwattr $C$DW$38, DW_AT_type(*$C$DW$T$6)
+     446                    .dwattr $C$DW$38, DW_AT_location[DW_OP_reg12]
+     447            
+     448            ;*****************************************************************************
+     449            ;* FUNCTION NAME: f4                                                         *
+     450            ;*                                                                           *
+     451            ;*   Regs Modified     : SP,SR,r12,r13,r14                                   *
+     452            ;*   Regs Used         : SP,SR,r12,r13,r14                                   *
+     453            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     454            ;*****************************************************************************
+     455 000000       f4:
+     456            ;* --------------------------------------------------------------------------*
+     457                    .dwcfi  cfa_offset, 2
+     458                    .dwcfi  save_reg_to_mem, 16, -2
+     459            ;* r13   assigned to a
+     460            $C$DW$39        .dwtag  DW_TAG_variable, DW_AT_name("a")
+     461                    .dwattr $C$DW$39, DW_AT_TI_symbol_name("a")
+     462                    .dwattr $C$DW$39, DW_AT_type(*$C$DW$T$6)
+     463                    .dwattr $C$DW$39, DW_AT_location[DW_OP_reg13]
+     464 000000 4C0D          MOV.W     r12,r13               ; [] |48| 
+     465                    .dwpsn  file "../data_type_impact.c",line 48,column 18,is_stmt,isa 0
+     466 000002 4D4C          MOV.B     r13,r12               ; [] |48| 
+     467 000004 4D4D          MOV.B     r13,r13               ; [] |48| 
+     468            $C$DW$40        .dwtag  DW_TAG_TI_branch
+     469                    .dwattr $C$DW$40, DW_AT_low_pc(0x00)
+     470                    .dwattr $C$DW$40, DW_AT_name("__mspabi_mpyi")
+     471                    .dwattr $C$DW$40, DW_AT_TI_call
+     472 000006 12B0          CALL      #__mspabi_mpyi        ; [] |48| 
+         000008 0000!
+     473                                                      ; [] |48| 
+     474 00000a 4C4C          MOV.B     r12,r12               ; [] |48| 
+     475                    .dwpsn  file "../data_type_impact.c",line 48,column 29,is_stmt,isa 0
+     476            $C$DW$41        .dwtag  DW_TAG_TI_branch
+     477                    .dwattr $C$DW$41, DW_AT_low_pc(0x00)
+     478                    .dwattr $C$DW$41, DW_AT_TI_return
+     479 00000c 4130          RET       ; [] 
+     480                    ; [] 
+     481                    .dwattr $C$DW$37, DW_AT_TI_end_file("../data_type_impact.c")
+     482                    .dwattr $C$DW$37, DW_AT_TI_end_line(0x30)
+     483                    .dwattr $C$DW$37, DW_AT_TI_end_column(0x1d)
+     484                    .dwendentry
+     485                    .dwendtag $C$DW$37
+     486            
+     487 000000               .sect   ".text:addFloat"
+     488                    .clink
+     489                    .global addFloat
+     490            
+     491            $C$DW$42        .dwtag  DW_TAG_subprogram, DW_AT_name("addFloat")
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE   10
+
+     492                    .dwattr $C$DW$42, DW_AT_low_pc(addFloat)
+     493                    .dwattr $C$DW$42, DW_AT_high_pc(0x00)
+     494                    .dwattr $C$DW$42, DW_AT_TI_symbol_name("addFloat")
+     495                    .dwattr $C$DW$42, DW_AT_external
+     496                    .dwattr $C$DW$42, DW_AT_type(*$C$DW$T$16)
+     497                    .dwattr $C$DW$42, DW_AT_TI_begin_file("../data_type_impact.c")
+     498                    .dwattr $C$DW$42, DW_AT_TI_begin_line(0x34)
+     499                    .dwattr $C$DW$42, DW_AT_TI_begin_column(0x07)
+     500                    .dwattr $C$DW$42, DW_AT_decl_file("../data_type_impact.c")
+     501                    .dwattr $C$DW$42, DW_AT_decl_line(0x34)
+     502                    .dwattr $C$DW$42, DW_AT_decl_column(0x07)
+     503                    .dwattr $C$DW$42, DW_AT_TI_max_frame_size(0x02)
+     504                    .dwpsn  file "../data_type_impact.c",line 53,column 1,is_stmt,address addFloat,isa 0
+     505            
+     506                    .dwfde $C$DW$CIE, addFloat
+     507            $C$DW$43        .dwtag  DW_TAG_formal_parameter, DW_AT_name("a")
+     508                    .dwattr $C$DW$43, DW_AT_TI_symbol_name("a")
+     509                    .dwattr $C$DW$43, DW_AT_type(*$C$DW$T$16)
+     510                    .dwattr $C$DW$43, DW_AT_location[DW_OP_reg12]
+     511            $C$DW$44        .dwtag  DW_TAG_formal_parameter, DW_AT_name("b")
+     512                    .dwattr $C$DW$44, DW_AT_TI_symbol_name("b")
+     513                    .dwattr $C$DW$44, DW_AT_type(*$C$DW$T$16)
+     514                    .dwattr $C$DW$44, DW_AT_location[DW_OP_reg14]
+     515            
+     516            ;*****************************************************************************
+     517            ;* FUNCTION NAME: addFloat                                                   *
+     518            ;*                                                                           *
+     519            ;*   Regs Modified     : SP,SR,r11,r12,r13,r14,r15                           *
+     520            ;*   Regs Used         : SP,SR,r11,r12,r13,r14,r15                           *
+     521            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     522            ;*****************************************************************************
+     523 000000       addFloat:
+     524            ;* --------------------------------------------------------------------------*
+     525                    .dwcfi  cfa_offset, 2
+     526                    .dwcfi  save_reg_to_mem, 16, -2
+     527                    .dwpsn  file "../data_type_impact.c",line 55,column 1,is_stmt,isa 0
+     528            $C$DW$45        .dwtag  DW_TAG_TI_branch
+     529                    .dwattr $C$DW$45, DW_AT_low_pc(0x00)
+     530                    .dwattr $C$DW$45, DW_AT_name("__mspabi_addf")
+     531                    .dwattr $C$DW$45, DW_AT_TI_call
+     532 000000 12B0          CALL      #__mspabi_addf        ; [] |55| 
+         000002 0000!
+     533                                                      ; [] |55| 
+     534                    .dwpsn  file "../data_type_impact.c",line 56,column 1,is_stmt,isa 0
+     535                    .dwpsn  file "../data_type_impact.c",line 57,column 1,is_stmt,isa 0
+     536            $C$DW$46        .dwtag  DW_TAG_TI_branch
+     537                    .dwattr $C$DW$46, DW_AT_low_pc(0x00)
+     538                    .dwattr $C$DW$46, DW_AT_TI_return
+     539 000004 4130          RET       ; [] 
+     540                    ; [] 
+     541                    .dwattr $C$DW$42, DW_AT_TI_end_file("../data_type_impact.c")
+     542                    .dwattr $C$DW$42, DW_AT_TI_end_line(0x39)
+     543                    .dwattr $C$DW$42, DW_AT_TI_end_column(0x01)
+     544                    .dwendentry
+     545                    .dwendtag $C$DW$42
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE   11
+
+     546            
+     547 000000               .sect   ".text:main"
+     548                    .clink
+     549                    .global main
+     550            
+     551            $C$DW$47        .dwtag  DW_TAG_subprogram, DW_AT_name("main")
+     552                    .dwattr $C$DW$47, DW_AT_low_pc(main)
+     553                    .dwattr $C$DW$47, DW_AT_high_pc(0x00)
+     554                    .dwattr $C$DW$47, DW_AT_TI_symbol_name("main")
+     555                    .dwattr $C$DW$47, DW_AT_external
+     556                    .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$10)
+     557                    .dwattr $C$DW$47, DW_AT_TI_begin_file("../data_type_impact.c")
+     558                    .dwattr $C$DW$47, DW_AT_TI_begin_line(0x3b)
+     559                    .dwattr $C$DW$47, DW_AT_TI_begin_column(0x05)
+     560                    .dwattr $C$DW$47, DW_AT_decl_file("../data_type_impact.c")
+     561                    .dwattr $C$DW$47, DW_AT_decl_line(0x3b)
+     562                    .dwattr $C$DW$47, DW_AT_decl_column(0x05)
+     563                    .dwattr $C$DW$47, DW_AT_TI_max_frame_size(0x08)
+     564                    .dwpsn  file "../data_type_impact.c",line 59,column 16,is_stmt,address main,isa 0
+     565            
+     566                    .dwfde $C$DW$CIE, main
+     567            
+     568            ;*****************************************************************************
+     569            ;* FUNCTION NAME: main                                                       *
+     570            ;*                                                                           *
+     571            ;*   Regs Modified     : SP,SR,r11,r12,r13,r14,r15                           *
+     572            ;*   Regs Used         : SP,SR,r11,r12,r13,r14,r15                           *
+     573            ;*   Local Frame Size  : 0 Args + 6 Auto + 0 Save = 6 byte                   *
+     574            ;*****************************************************************************
+     575 000000       main:
+     576            ;* --------------------------------------------------------------------------*
+     577                    .dwcfi  cfa_offset, 2
+     578                    .dwcfi  save_reg_to_mem, 16, -2
+     579 000000 8031          SUB.W     #6,SP                 ; [] 
+         000002 0006 
+     580                    .dwcfi  cfa_offset, 8
+     581            $C$DW$48        .dwtag  DW_TAG_variable, DW_AT_name("r")
+     582                    .dwattr $C$DW$48, DW_AT_TI_symbol_name("r")
+     583                    .dwattr $C$DW$48, DW_AT_type(*$C$DW$T$29)
+     584                    .dwattr $C$DW$48, DW_AT_location[DW_OP_breg1 0]
+     585            $C$DW$49        .dwtag  DW_TAG_variable, DW_AT_name("i")
+     586                    .dwattr $C$DW$49, DW_AT_TI_symbol_name("i")
+     587                    .dwattr $C$DW$49, DW_AT_type(*$C$DW$T$28)
+     588                    .dwattr $C$DW$49, DW_AT_location[DW_OP_breg1 4]
+     589                    .dwpsn  file "../data_type_impact.c",line 60,column 2,is_stmt,isa 0
+     590 000004 40B2          MOV.W     #23168,&WDTCTL+0      ; [] |60| 
+         000006 5A80 
+         000008 0000!
+     591                    .dwpsn  file "../data_type_impact.c",line 61,column 2,is_stmt,isa 0
+     592 00000a D3D2          OR.B      #1,&P1DIR+0           ; [] |61| 
+         00000c 0000!
+     593            ;* --------------------------------------------------------------------------*
+     594            ;*   BEGIN LOOP $C$L1
+     595            ;*
+     596            ;*   Loop source line                : 63
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE   12
+
+     597            ;*   Loop closing brace source line  : 76
+     598            ;*   Known Minimum Trip Count        : 1
+     599            ;*   Known Maximum Trip Count        : 4294967295
+     600            ;*   Known Max Trip Count Factor     : 1
+     601            ;* --------------------------------------------------------------------------*
+     602 00000e       $C$L1:    
+     603                    .dwpsn  file "../data_type_impact.c",line 66,column 3,is_stmt,isa 0
+     604 00000e E3D2          XOR.B     #1,&P1OUT+0           ; [] |66| 
+         000010 0000!
+     605                    .dwpsn  file "../data_type_impact.c",line 68,column 3,is_stmt,isa 0
+     606 000012 40B1          MOV.W     #10000,4(SP)          ; [] |68| 
+         000014 2710 
+         000016 0004 
+     607            ;* --------------------------------------------------------------------------*
+     608            ;*   BEGIN LOOP $C$L2
+     609            ;*
+     610            ;*   Loop source line                : 69
+     611            ;*   Loop closing brace source line  : 69
+     612            ;*   Known Minimum Trip Count        : 1
+     613            ;*   Known Maximum Trip Count        : 4294967295
+     614            ;*   Known Max Trip Count Factor     : 1
+     615            ;* --------------------------------------------------------------------------*
+     616 000018       $C$L2:    
+     617                    .dwpsn  file "../data_type_impact.c",line 69,column 6,is_stmt,isa 0
+     618 000018 8391          SUB.W     #1,4(SP)              ; [] |69| 
+         00001a 0004 
+     619                    .dwpsn  file "../data_type_impact.c",line 70,column 9,is_stmt,isa 0
+     620 00001c 9381          TST.W     4(SP)                 ; [] |70| 
+         00001e 0004 
+     621 000020 23FB          JNE       $C$L2                 ; [] |70| 
+     622                                                      ; [] |70| 
+     623            ;* --------------------------------------------------------------------------*
+     624                    .dwpsn  file "../data_type_impact.c",line 71,column 3,is_stmt,isa 0
+     625 000022 435C          MOV.B     #1,r12                ; [] |71| 
+     626 000024 407D          MOV.B     #5,r13                ; [] |71| 
+         000026 0005 
+     627            $C$DW$50        .dwtag  DW_TAG_TI_branch
+     628                    .dwattr $C$DW$50, DW_AT_low_pc(0x00)
+     629                    .dwattr $C$DW$50, DW_AT_name("addChar")
+     630                    .dwattr $C$DW$50, DW_AT_TI_call
+     631 000028 12B0          CALL      #addChar              ; [] |71| 
+         00002a 0000!
+     632                                                      ; [] |71| 
+     633 00002c 4C4C          MOV.B     r12,r12               ; [] |71| 
+     634 00002e 4C81          MOV.W     r12,0(SP)             ; [] |71| 
+         000030 0000 
+     635 000032 4381          MOV.W     #0,2(SP)              ; [] |71| 
+         000034 0002 
+     636                    .dwpsn  file "../data_type_impact.c",line 72,column 3,is_stmt,isa 0
+     637 000036 435C          MOV.B     #1,r12                ; [] |72| 
+     638            $C$DW$51        .dwtag  DW_TAG_TI_branch
+     639                    .dwattr $C$DW$51, DW_AT_low_pc(0x00)
+     640                    .dwattr $C$DW$51, DW_AT_name("dummy")
+     641                    .dwattr $C$DW$51, DW_AT_TI_call
+     642 000038 12B0          CALL      #dummy                ; [] |72| 
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE   13
+
+         00003a 0000!
+     643                                                      ; [] |72| 
+     644 00003c 4C4C          MOV.B     r12,r12               ; [] |72| 
+     645 00003e 4C81          MOV.W     r12,0(SP)             ; [] |72| 
+         000040 0000 
+     646 000042 4381          MOV.W     #0,2(SP)              ; [] |72| 
+         000044 0002 
+     647                    .dwpsn  file "../data_type_impact.c",line 73,column 3,is_stmt,isa 0
+     648 000046 431C          MOV.W     #1,r12                ; [] |73| 
+     649 000048 430D          MOV.W     #0,r13                ; [] |73| 
+     650 00004a 403E          MOV.W     #5,r14                ; [] |73| 
+         00004c 0005 
+     651 00004e 430F          MOV.W     #0,r15                ; [] |73| 
+     652            $C$DW$52        .dwtag  DW_TAG_TI_branch
+     653                    .dwattr $C$DW$52, DW_AT_low_pc(0x00)
+     654                    .dwattr $C$DW$52, DW_AT_name("addLong")
+     655                    .dwattr $C$DW$52, DW_AT_TI_call
+     656 000050 12B0          CALL      #addLong              ; [] |73| 
+         000052 0000!
+     657                                                      ; [] |73| 
+     658 000054 4C81          MOV.W     r12,0(SP)             ; [] |73| 
+         000056 0000 
+     659 000058 4D81          MOV.W     r13,2(SP)             ; [] |73| 
+         00005a 0002 
+     660                    .dwpsn  file "../data_type_impact.c",line 74,column 3,is_stmt,isa 0
+     661 00005c 403C          MOV.W     #52429,r12            ; [] |74| 
+         00005e CCCD 
+     662 000060 403D          MOV.W     #16268,r13            ; [] |74| 
+         000062 3F8C 
+     663 000064 403E          MOV.W     #13107,r14            ; [] |74| 
+         000066 3333 
+     664 000068 403F          MOV.W     #16547,r15            ; [] |74| 
+         00006a 40A3 
+     665            $C$DW$53        .dwtag  DW_TAG_TI_branch
+     666                    .dwattr $C$DW$53, DW_AT_low_pc(0x00)
+     667                    .dwattr $C$DW$53, DW_AT_name("addFloat")
+     668                    .dwattr $C$DW$53, DW_AT_TI_call
+     669 00006c 12B0          CALL      #addFloat             ; [] |74| 
+         00006e 0000!
+     670                                                      ; [] |74| 
+     671            $C$DW$54        .dwtag  DW_TAG_TI_branch
+     672                    .dwattr $C$DW$54, DW_AT_low_pc(0x00)
+     673                    .dwattr $C$DW$54, DW_AT_name("__mspabi_fixfli")
+     674                    .dwattr $C$DW$54, DW_AT_TI_call
+     675 000070 12B0          CALL      #__mspabi_fixfli      ; [] |74| 
+         000072 0000!
+     676                                                      ; [] |74| 
+     677 000074 4C81          MOV.W     r12,0(SP)             ; [] |74| 
+         000076 0000 
+     678 000078 4D81          MOV.W     r13,2(SP)             ; [] |74| 
+         00007a 0002 
+     679                    .dwpsn  file "../data_type_impact.c",line 75,column 3,is_stmt,isa 0
+     680 00007c 436C          MOV.B     #2,r12                ; [] |75| 
+     681            $C$DW$55        .dwtag  DW_TAG_TI_branch
+     682                    .dwattr $C$DW$55, DW_AT_low_pc(0x00)
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE   14
+
+     683                    .dwattr $C$DW$55, DW_AT_name("f1")
+     684                    .dwattr $C$DW$55, DW_AT_TI_call
+     685 00007e 12B0          CALL      #f1                   ; [] |75| 
+         000080 0000!
+     686                                                      ; [] |75| 
+     687 000082 4C4C          MOV.B     r12,r12               ; [] |75| 
+     688 000084 4C81          MOV.W     r12,0(SP)             ; [] |75| 
+         000086 0000 
+     689 000088 4381          MOV.W     #0,2(SP)              ; [] |75| 
+         00008a 0002 
+     690                    .dwpsn  file "../data_type_impact.c",line 76,column 2,is_stmt,isa 0
+     691 00008c 3FC0          JMP       $C$L1                 ; [] |76| 
+     692                                                      ; [] |76| 
+     693            ;* --------------------------------------------------------------------------*
+     694                    .dwattr $C$DW$47, DW_AT_TI_end_file("../data_type_impact.c")
+     695                    .dwattr $C$DW$47, DW_AT_TI_end_line(0x4f)
+     696                    .dwattr $C$DW$47, DW_AT_TI_end_column(0x01)
+     697                    .dwendentry
+     698                    .dwendtag $C$DW$47
+     699            
+     700            ;*****************************************************************************
+     701            ;* UNDEFINED EXTERNAL REFERENCES                                             *
+     702            ;*****************************************************************************
+     703                    .global P1OUT
+     704                    .global P1DIR
+     705                    .global WDTCTL
+     706                    .global __mspabi_mpyi
+     707                    .global __mspabi_addf
+     708                    .global __mspabi_fixfli
+     709            
+     710            ;******************************************************************************
+     711            ;* BUILD ATTRIBUTES                                                           *
+     712            ;******************************************************************************
+     713                    .battr "TI", Tag_File, 1, Tag_LPM_INFO(1)
+     714                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0111000000000000000000010
+     715                    .battr "TI", Tag_File, 1, Tag_HW_MPY32_INFO(1)
+     716                    .battr "TI", Tag_File, 1, Tag_HW_MPY_ISR_INFO(1)
+     717                    .battr "TI", Tag_File, 1, Tag_HW_MPY_INLINE_INFO(1)
+     718                    .battr "mspabi", Tag_File, 1, Tag_enum_size(3)
+     719            
+     720            ;******************************************************************************
+     721            ;* TYPE INFORMATION                                                           *
+     722            ;******************************************************************************
+     723            $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+     724                    .dwattr $C$DW$T$2, DW_AT_name("void")
+     725            $C$DW$T$4       .dwtag  DW_TAG_base_type
+     726                    .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     727                    .dwattr $C$DW$T$4, DW_AT_name("bool")
+     728                    .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     729            $C$DW$T$5       .dwtag  DW_TAG_base_type
+     730                    .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+     731                    .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     732                    .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     733            $C$DW$T$6       .dwtag  DW_TAG_base_type
+     734                    .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE   15
+
+     735                    .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+     736                    .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     737            $C$DW$T$19      .dwtag  DW_TAG_volatile_type
+     738                    .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$6)
+     739            $C$DW$T$7       .dwtag  DW_TAG_base_type
+     740                    .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     741                    .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     742                    .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+     743            $C$DW$T$8       .dwtag  DW_TAG_base_type
+     744                    .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     745                    .dwattr $C$DW$T$8, DW_AT_name("short")
+     746                    .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+     747            $C$DW$T$9       .dwtag  DW_TAG_base_type
+     748                    .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+     749                    .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     750                    .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+     751            $C$DW$T$10      .dwtag  DW_TAG_base_type
+     752                    .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     753                    .dwattr $C$DW$T$10, DW_AT_name("int")
+     754                    .dwattr $C$DW$T$10, DW_AT_byte_size(0x02)
+     755            $C$DW$T$11      .dwtag  DW_TAG_base_type
+     756                    .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+     757                    .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+     758                    .dwattr $C$DW$T$11, DW_AT_byte_size(0x02)
+     759            $C$DW$T$28      .dwtag  DW_TAG_volatile_type
+     760                    .dwattr $C$DW$T$28, DW_AT_type(*$C$DW$T$11)
+     761            $C$DW$T$12      .dwtag  DW_TAG_base_type
+     762                    .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+     763                    .dwattr $C$DW$T$12, DW_AT_name("long")
+     764                    .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+     765            $C$DW$T$29      .dwtag  DW_TAG_volatile_type
+     766                    .dwattr $C$DW$T$29, DW_AT_type(*$C$DW$T$12)
+     767            $C$DW$T$13      .dwtag  DW_TAG_base_type
+     768                    .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+     769                    .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+     770                    .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+     771            $C$DW$T$14      .dwtag  DW_TAG_base_type
+     772                    .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+     773                    .dwattr $C$DW$T$14, DW_AT_name("long long")
+     774                    .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+     775            $C$DW$T$15      .dwtag  DW_TAG_base_type
+     776                    .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+     777                    .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+     778                    .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+     779            $C$DW$T$16      .dwtag  DW_TAG_base_type
+     780                    .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+     781                    .dwattr $C$DW$T$16, DW_AT_name("float")
+     782                    .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+     783            $C$DW$T$17      .dwtag  DW_TAG_base_type
+     784                    .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+     785                    .dwattr $C$DW$T$17, DW_AT_name("double")
+     786                    .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+     787            $C$DW$T$18      .dwtag  DW_TAG_base_type
+     788                    .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+     789                    .dwattr $C$DW$T$18, DW_AT_name("long double")
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE   16
+
+     790                    .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+     791            $C$DW$T$36      .dwtag  DW_TAG_pointer_type
+     792                    .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$6)
+     793                    .dwattr $C$DW$T$36, DW_AT_address_class(0x10)
+     794            $C$DW$T$37      .dwtag  DW_TAG_typedef, DW_AT_name("__builtin_va_list")
+     795                    .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$36)
+     796                    .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
+     797                    .dwattr $C$DW$T$37, DW_AT_decl_file("../data_type_impact.c")
+     798                    .dwattr $C$DW$T$37, DW_AT_decl_line(0x4f)
+     799                    .dwattr $C$DW$T$37, DW_AT_decl_column(0x01)
+     800                    .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+     801            
+     802            ;***************************************************************
+     803            ;* DWARF CIE ENTRIES                                           *
+     804            ;***************************************************************
+     805            
+     806            $C$DW$CIE       .dwcie 16
+     807                    .dwcfi  cfa_register, 1
+     808                    .dwcfi  cfa_offset, 0
+     809                    .dwcfi  same_value, 0
+     810                    .dwcfi  same_value, 1
+     811                    .dwcfi  undefined, 2
+     812                    .dwcfi  same_value, 3
+     813                    .dwcfi  same_value, 4
+     814                    .dwcfi  same_value, 5
+     815                    .dwcfi  same_value, 6
+     816                    .dwcfi  same_value, 7
+     817                    .dwcfi  same_value, 8
+     818                    .dwcfi  same_value, 9
+     819                    .dwcfi  same_value, 10
+     820                    .dwcfi  undefined, 11
+     821                    .dwcfi  undefined, 12
+     822                    .dwcfi  undefined, 13
+     823                    .dwcfi  undefined, 14
+     824                    .dwcfi  undefined, 15
+     825                    .dwcfi  undefined, 16
+     826                    .dwendentry
+     827            
+     828            ;***************************************************************
+     829            ;* DWARF REGISTER MAP                                          *
+     830            ;***************************************************************
+     831            
+     832            $C$DW$56        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PC")
+     833                    .dwattr $C$DW$56, DW_AT_location[DW_OP_reg0]
+     834            $C$DW$57        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SP")
+     835                    .dwattr $C$DW$57, DW_AT_location[DW_OP_reg1]
+     836            $C$DW$58        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SR")
+     837                    .dwattr $C$DW$58, DW_AT_location[DW_OP_reg2]
+     838            $C$DW$59        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("CG")
+     839                    .dwattr $C$DW$59, DW_AT_location[DW_OP_reg3]
+     840            $C$DW$60        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r4")
+     841                    .dwattr $C$DW$60, DW_AT_location[DW_OP_reg4]
+     842            $C$DW$61        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r5")
+     843                    .dwattr $C$DW$61, DW_AT_location[DW_OP_reg5]
+     844            $C$DW$62        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r6")
+MSP430 Assembler Unix v4.4.3 Sat Apr 18 14:29:05 2015
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+data_type_impact.asm                                                 PAGE   17
+
+     845                    .dwattr $C$DW$62, DW_AT_location[DW_OP_reg6]
+     846            $C$DW$63        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r7")
+     847                    .dwattr $C$DW$63, DW_AT_location[DW_OP_reg7]
+     848            $C$DW$64        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r8")
+     849                    .dwattr $C$DW$64, DW_AT_location[DW_OP_reg8]
+     850            $C$DW$65        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r9")
+     851                    .dwattr $C$DW$65, DW_AT_location[DW_OP_reg9]
+     852            $C$DW$66        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r10")
+     853                    .dwattr $C$DW$66, DW_AT_location[DW_OP_reg10]
+     854            $C$DW$67        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r11")
+     855                    .dwattr $C$DW$67, DW_AT_location[DW_OP_reg11]
+     856            $C$DW$68        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r12")
+     857                    .dwattr $C$DW$68, DW_AT_location[DW_OP_reg12]
+     858            $C$DW$69        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r13")
+     859                    .dwattr $C$DW$69, DW_AT_location[DW_OP_reg13]
+     860            $C$DW$70        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r14")
+     861                    .dwattr $C$DW$70, DW_AT_location[DW_OP_reg14]
+     862            $C$DW$71        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("r15")
+     863                    .dwattr $C$DW$71, DW_AT_location[DW_OP_reg15]
+     864            $C$DW$72        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("CIE_RETA")
+     865                    .dwattr $C$DW$72, DW_AT_location[DW_OP_reg16]
+     866                    .dwendtag $C$DW$CU
+     867            
+
+No Assembly Errors, No Assembly Warnings

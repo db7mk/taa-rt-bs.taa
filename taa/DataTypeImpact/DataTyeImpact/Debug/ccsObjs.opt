@@ -1,0 +1,1 @@
+"./data_type_impact.obj" "../lnk_msp430g2553.cmd" -l"libc.a" 
