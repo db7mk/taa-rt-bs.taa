@@ -2,20 +2,18 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-SHELL = cmd.exe
-
-CG_TOOL_ROOT := D:/CS55/ccsv5/tools/compiler/msp430_4.2.1
+CG_TOOL_ROOT := /opt/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3
 
 ORDERED_OBJS += \
-$(GEN_CMDS__FLAG) \
 "./blink.obj" \
 "../lnk_msp430g2553.cmd" \
+$(GEN_CMDS__FLAG) \
 -l"libc.a" \
 
 -include ../makefile.init
 
-RM := DEL /F
-RMDIR := RMDIR /S/Q
+RM := rm -rf
+RMDIR := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
@@ -48,11 +46,11 @@ endif
 ifneq ($(strip $(C67_DEPS)),)
 -include $(C67_DEPS)
 endif
-ifneq ($(strip $(C??_DEPS)),)
--include $(C??_DEPS)
-endif
 ifneq ($(strip $(CLA_DEPS)),)
 -include $(CLA_DEPS)
+endif
+ifneq ($(strip $(C??_DEPS)),)
+-include $(C??_DEPS)
 endif
 ifneq ($(strip $(CPP_DEPS)),)
 -include $(CPP_DEPS)
@@ -81,6 +79,9 @@ endif
 ifneq ($(strip $(C43_DEPS)),)
 -include $(C43_DEPS)
 endif
+ifneq ($(strip $(INO_DEPS)),)
+-include $(INO_DEPS)
+endif
 ifneq ($(strip $(S67_DEPS)),)
 -include $(S67_DEPS)
 endif
@@ -92,6 +93,9 @@ ifneq ($(strip $(S43_DEPS)),)
 endif
 ifneq ($(strip $(OPT_DEPS)),)
 -include $(OPT_DEPS)
+endif
+ifneq ($(strip $(PDE_DEPS)),)
+-include $(PDE_DEPS)
 endif
 ifneq ($(strip $(S64_DEPS)),)
 -include $(S64_DEPS)
@@ -107,6 +111,12 @@ endif
 -include ../makefile.defs
 
 # Add inputs and outputs from these tool invocations to the build variables 
+EXE_OUTPUTS += \
+BlinkTheLed.out \
+
+EXE_OUTPUTS__QUOTED += \
+"BlinkTheLed.out" \
+
 
 # All Target
 all: BlinkTheLed.out
@@ -115,13 +125,13 @@ all: BlinkTheLed.out
 BlinkTheLed.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP430 Linker'
-	"D:/CS55/ccsv5/tools/compiler/msp430_4.2.1/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430G2553__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -k --asm_listing -z -m"BlinkTheLed.map" --heap_size=80 --stack_size=80 -i"D:/CS55/ccsv5/ccs_base/msp430/include" -i"D:/CS55/ccsv5/tools/compiler/msp430_4.2.1/lib" -i"D:/CS55/ccsv5/tools/compiler/msp430_4.2.1/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="BlinkTheLed_linkInfo.xml" --rom_model -o "BlinkTheLed.out" $(ORDERED_OBJS)
+	"/opt/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430G2553__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -k --asm_listing -z -m"BlinkTheLed.map" --heap_size=80 --stack_size=80 -i"/opt/ti/ccsv6/ccs_base/msp430/include" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-msp430_4.4.3/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="BlinkTheLed_linkInfo.xml" --rom_model -o "BlinkTheLed.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(MSP430_EXECUTABLE_OUTPUTS__QUOTED) "BlinkTheLed.out"
+	-$(RM) $(EXE_OUTPUTS__QUOTED)
 	-$(RM) "blink.pp" 
 	-$(RM) "blink.obj" 
 	-@echo 'Finished clean'

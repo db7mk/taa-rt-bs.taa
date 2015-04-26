@@ -1,0 +1,1 @@
+"./display_tendency.obj" "./main.obj" "./measure_temp.obj" "./short_statistic.obj" "../lnk_msp430g2553.cmd" -l"libc.a" 

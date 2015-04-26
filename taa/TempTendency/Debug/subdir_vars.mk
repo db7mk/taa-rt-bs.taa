@@ -9,31 +9,37 @@ CMD_SRCS += \
 C_SRCS += \
 ../display_tendency.c \
 ../main.c \
-../measure_temp.c 
+../measure_temp.c \
+../short_statistic.c 
 
 OBJS += \
 ./display_tendency.obj \
 ./main.obj \
-./measure_temp.obj 
+./measure_temp.obj \
+./short_statistic.obj 
 
 C_DEPS += \
 ./display_tendency.pp \
 ./main.pp \
-./measure_temp.pp 
+./measure_temp.pp \
+./short_statistic.pp 
 
 C_DEPS__QUOTED += \
 "display_tendency.pp" \
 "main.pp" \
-"measure_temp.pp" 
+"measure_temp.pp" \
+"short_statistic.pp" 
 
 OBJS__QUOTED += \
 "display_tendency.obj" \
 "main.obj" \
-"measure_temp.obj" 
+"measure_temp.obj" \
+"short_statistic.obj" 
 
 C_SRCS__QUOTED += \
 "../display_tendency.c" \
 "../main.c" \
-"../measure_temp.c" 
+"../measure_temp.c" \
+"../short_statistic.c" 
 
 
