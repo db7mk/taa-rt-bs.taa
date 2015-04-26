@@ -1,1 +1,1 @@
-"./TogglePort.obj" "../lnk_msp430g2553.cmd" -l"libc.a" 
+"./TogglePort.obj" "./version.obj" "../lnk_msp430g2553.cmd" -l"libc.a" 
